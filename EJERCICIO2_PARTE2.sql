@@ -1,3 +1,7 @@
+/*
+Calcular la potencia de un número cualquiera e 
+imprimir el resultado. Ejemplo: 2^4 = 16.
+*/
 DECLARE
 v_num NUMBER;
 v_exponent NUMBER;

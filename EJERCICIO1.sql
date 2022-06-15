@@ -17,7 +17,13 @@ SELECT MAX(AÑO) INTO v_max_year FROM pelicula;
 --Traer descripcion de la pelicula COCO
 SELECT NVL(DESCRIPCION, 'SERA QUE YA?') INTO v_coco_description FROM pelicula WHERE idpelicula = 6;
 
-v_movie_id := &idmovie ; --TERCER EJERCICIO
+v_movie_id := &idmovie ; 
+--TERCER EJERCICIO
+/*Armar e imprimir una descripción corta 
+de cualquier película con el siguiente 
+formato: (año de estreno) - Primeros 40 
+caracteres de la descripción...
+*/
 SELECT AÑO, DESCRIPCION INTO v_year_movie, v_description FROM PELICULA WHERE idpelicula = v_movie_id;
 
 v_short_description := SUBSTR(v_description, 1, 40);

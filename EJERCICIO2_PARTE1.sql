@@ -1,4 +1,10 @@
-
+/*
+Dada una determinada opinión, si esta fue de 1 o 2 
+puntos llenar una variable con el valor "Mala". 
+Si fue de 3 o 4 puntos "Buena" y si fue de 5 puntos 
+"Excelente". Luego imprimir el resultado junto al 
+título de la película.
+*/
 DECLARE 
 v_opinion opinion%ROWTYPE;
 v_id_opinion opinion.idopinion%TYPE;
